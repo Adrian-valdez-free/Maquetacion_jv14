@@ -1,0 +1,113 @@
+/* contenedor carrousel */
+#carousel {
+  background-image: url(assets/Testimonials.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+/* contenido carrrousel */
+#slide-container {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  margin: auto;
+  width: 90%;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 20px;
+  color: #000;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+.slide {
+  padding: 15px;
+  scroll-snap-align: center;
+  position: relative;
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: var(--Azul-fuerte);
+  position: relative;
+}
+/* contenedor botones */
+.slide-buttons {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+/* contenedor indicadores */
+.slide-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  
+}
+.slide-indicator {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 5px;
+  width: 50px;
+}
+.slide-indicator:after {
+  content: "";
+  border: 1px darkgray solid;
+  height: 10px;
+  width: 50px;
+  border-radius:2px;
+}
+.slide-indicator.active:after,
+.slide-indicator:hover:after {
+  background-color: var(--Rojoclaro);
+}
+.imagen{
+  border-radius: 50%;
+  transform: translateY(-30px);
+}
+.imagen img{
+  border-radius: 50%;
+  width: 60%;
+  border: 2px solid white;
+}
+.quotes2{
+  position: absolute;
+  z-index: 12;
+  bottom: 0%;
+  right: 5%;
+  color: #666666
+}
+.quotes2 i{
+  font-size: 44px;
+}
+.quotes{
+  position: absolute;
+  z-index: 12;
+  top: -5%;
+left: 5%;
+  color: #666666
+}
+.quotes i{
+  font-size: 44px;
+}
+@media(max-width:480px){
+  .slide {
+  scroll-snap-align: center;
+  position: relative;
+  min-width: 100%;
+  text-align: center;
+}
+}
