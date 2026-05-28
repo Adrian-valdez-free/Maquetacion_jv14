@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   new WOW().init();
 
-   $('#boton_menu').click(function(e){
+  $('#boton_menu').click(function(e){
   $('#menu').toggleClass("abrir_Menu").removeClass("cerrar_menu");
   });
 

@@ -14,6 +14,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="carrousel2.css">
 <script src="responsiveslides.js"></script>
 <script src="funciones.js"></script>
@@ -21,6 +22,21 @@
   <title>Proyecto final</title>
 </head>
 <body>
+  <div class="filter2" id="modal">
+    <div class="container-modal margen">
+      <div class="container-boton">
+      </div>
+      <div class="title">
+          <h3 class ="rojo"><i class="fa-solid fa-screwdriver-wrench"></i>Watch This video<i class="fa-solid fa-screwdriver-wrench"></i></h3>
+          <h1 class ="azul">Tutorial</h1>
+          <hr class ="rojo">
+        </div>
+        <div id="Conetenedor-youtube">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/PNhuDCVIydw?si=Hunj6BGzz6YDROtB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    </div>
+  </div>
   <header class ="margen">
     <div class="contacs">
       <a href="#"><i class="fa-solid fa-phone"></i> +123-456-7890</a>
@@ -35,17 +51,23 @@
   </header>
   <div class="bar-fixed">
     <div class="boton-responsive">
-      <a href="#"><i class="fa-solid fa-bars-staggered"></i></a>
+      <a href="#" id ="boton_menu"><i class="fa-solid fa-bars-staggered"></i></a>
     </div>
+    <div class="boton-responsive">
+    <div class="appointment">
+      <a href="#">appointment</a>
+      </div>
+      </div>
     <div class="logo">
       <figure>
         <img src="assets/logo.png" alt="">
       </figure>
     </div>
-  <nav>
+  <div class="destopk-nav">
+  <nav class="">
     <ul>
     <li><a href ="index.html">Home</a></li>
-    <li><a href ="#">About <i class="fa-solid fa-chevron-down"></i></a></li>
+   <li><a href ="Portafolio.html">Portafolio <i class="fa-solid fa-chevron-down"></i></a></li>
     <li><a href ="#">Service <i class="fa-solid fa-chevron-down"></i></a></li>
     <li><a href ="#">Pages <i class="fa-solid fa-chevron-down"></i></a></li>
     <li><a href ="#">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
@@ -57,7 +79,8 @@
   </div>
   </nav>
   </div>
-  
+
+  </div>
       <section id="Home" class="rslides_container">
         
           <ul class="rslides">
@@ -366,15 +389,44 @@ info@autofix.com</li>
           <div class="network2">
       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
       <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-linkedin"></i>
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
     </div>
         </div>
       </div>
      </footer class ="margen">
+     
   <script src="carrousel.js"></script>
   <div class="boton-f">
     <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
   </div>
+  <nav class ="nav-mobile" id="menu">
+        <ul>
+          <li><a class ="btn_ancla" href ="index.html">Home <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a class ="btn_ancla" href ="Portafolio.html">Portafolio <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a class ="btn_ancla" href ="#">Service <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a class ="btn_ancla" href ="#">Pages <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a class ="btn_ancla" href ="#">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a class ="btn_ancla" href ="#">Blog <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a class ="btn_ancla" href ="contact-us.html">Contact</a></li>
+
+        </ul>
+        <div class="boton_cerrar">
+        <a href="#" class="btn_ancla"><i class="fa-solid fa-xmark"></i></a>
+    </div>
+      </nav>
+<script>
+  function tiempo() {
+$("#modal").addClass("mostrar");
+}
+setTimeout(tiempo, 3000);
+window.onclick = function (event) {
+if (event.target == modal) {
+$("#modal").removeClass("mostrar");
+}
+};
+</script>
+
+
 </body>
 </html>

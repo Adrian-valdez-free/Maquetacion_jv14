@@ -1,0 +1,137 @@
+@media(max-width:430px){
+   header{
+    
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .bar-fixed{
+    align-items: center;
+  }
+   .contacs{
+    
+    gap: 0px;
+  }
+     .contacs a{
+    font-size: 14px;
+  }
+   .contacs i{
+    margin-right: 1px;
+  }
+    .network{
+    gap: 5px;
+  }
+  .destopk-nav {
+    display: none;
+  }
+  .boton-responsive{
+    display: block;
+  }
+  .logo{
+    width: 40%;
+  }
+  .text{
+  max-width: 430px;
+  position: absolute;
+  z-index: 32;
+  top: 125px;
+  left: 5px
+}
+.info{
+  flex-direction: column;
+}
+.card{
+  max-width: 100%;
+  justify-content: start;
+}
+.parallex{
+   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.box-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer{
+  flex-direction: column;
+}
+.contac{
+  max-width: 100%;
+}
+  .container-modal{
+    width: 95%;
+  }
+.nav-mobile{
+    position: absolute;
+    display: block !important;
+  }
+.nav-mobile ul{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-left: 10px;
+    gap: 20px;
+}
+     .nav-mobile ul li{
+    width: 100%;
+    background-color: white;
+    margin: 10px 0px;
+    padding: 10px;
+  }
+  .nav-mobile a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  .boton_cerrar{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+  .boton_cerrar a{
+    text-decoration: none;
+    color: red;
+  }
+  nav{
+    position: relative;
+    display: block;
+    position: fixed;
+    background-color: black;
+    height: 100vh;
+    width: 50%;
+    top: 0;
+    left: -100%;
+    z-index: 9999999;
+    transition: all 0.5s linear;
+  }
+  nav.abrir_Menu{
+    left: 0;
+  }
+  nav.cerrar_menu{
+    left: -100%;
+  }
+   .tabs{
+      flex-wrap: wrap;
+    }
+    .photos img{
+  width: 100%;
+}
+.container-forms{
+  align-items: center;
+  flex-direction: column;
+}
+.forms{
+  display: flex;
+  width: 100%;
+}
+.fifty {
+  width: 100%;
+}
+.map-container{
+  width: 100%;
+  height: 300px;
+}
+}

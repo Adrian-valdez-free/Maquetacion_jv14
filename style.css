@@ -458,3 +458,207 @@ footer{
   border-radius: 50%;
   color: white;
 }
+.hero{
+  background-image: url(assets/hero-service.jpg);
+  object-fit: cover;
+  object-position: center;
+  height: 40vh;
+  position: relative;
+  
+}
+.home{
+  color: white;
+  text-decoration: none;
+}
+.acordeon{
+  width: 100%;
+  background-color: #f7f7f7;
+  border: 1px solid #e3e3e3;
+  padding-bottom: 0;
+}
+.titulo{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-direction: row;
+    }
+.flechas1, .flechas2, .flechas3, .flechas4 {
+  transition: all 0.3s ease; 
+  color: var(--Rojo)
+}
+    .contenido-acordeon{
+      padding-bottom: 10px;
+    }
+  .rotar-180 {
+    transform: rotate(180deg); /* El ángulo que quieras (90deg, 180deg, etc.) */
+}
+.container-forms{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  -webkit-box-shadow: 0px 0px 58px -34px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 58px -34px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 58px -34px rgba(0,0,0,0.75);
+}
+.forms{
+  background-color:#fefefe;
+  display: flex;
+  width: 49%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.fifty {
+  margin-bottom: 10px;
+  width: 49.7%;
+  padding: 10px;
+  border: 1px #dfdfdf solid;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+.hundre{
+  margin-bottom: 10px;
+  width:99.9%;
+  padding: 10px;
+  border: 1px #dfdfdf solid;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+.forms textarea{
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border: 1px #dfdfdf solid;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+.appointment button{
+  display: inline-block;
+  padding: 15px 25px;
+  color: white;
+  background-color: var(--Rojoclaro);
+  border: none;
+  border-radius: 5px;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+}
+input:focus {
+  outline: none;
+  border-color: var(--Rojoclaro)
+}
+textarea:focus {
+  outline: none;
+  border-color: var(--Rojoclaro)
+}
+.map-container{
+  width: 50%;
+}
+.photos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.photos img{
+  width: 32%;
+}
+.tab_container{
+      border: 1px solid #999;
+      overflow: hidden;
+      width: 100%;
+      background-color: #fff;
+      margin: 10px;
+    }
+    .tab_content{
+      padding: 20px;
+      margin-bottom: 5px;
+    }
+    .tabs{
+      list-style: none;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+    }
+    .tabs li{
+      background-color:transparent !important;
+      border: 1px solid var(--Rojoclaro);
+      width: auto;
+      text-align: center;
+    }
+     .tabs li a{
+      text-decoration: none;
+      color: var(--Rojo);
+      display: block;
+      padding: 10px 30px;
+      transition: all .3s linear;
+    }
+    .tabs li a:hover{
+      background-color:var(--Rojoclaro)
+    }
+     li.active{
+      background: var(--Rojoclaro);
+    }
+     li.active a:hover{
+      background:var(--Rojo);
+    }
+   .filter2{
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px red solid;
+    background-color: rgb(0, 0, 0, .8);
+    position: fixed;
+  }
+  .container-modal{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #ffffff;
+    position: relative;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .container-boton{
+    position: absolute;
+    top: -50px;
+    right: 0px;
+  }
+  .boton_cerrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: darkgray;
+    width: 32px;
+  height: 32px;
+  text-decoration: none;
+    }
+    .filter2.mostrar {
+  display: flex;
+}
+#Conetenedor-youtube{
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+#Conetenedor-youtube iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
